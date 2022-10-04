@@ -1,0 +1,36 @@
+.pictures {
+  margin-top: 4rem;
+  img {
+    // border: 1px solid black;
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.info {
+  border: 1px solid black;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  &_left {
+    border: 1px solid black;
+    width: 70%;
+  }
+  &_tags {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  &_description {
+    border: 1px solid black;
+    width: 40%;
+  }
+  &_equipement {
+    border: 1px solid black;
+    width: 40%;
+  }
+}

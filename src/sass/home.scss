@@ -42,7 +42,7 @@ header {
   }
 }
 
-section {
+.imgAcceuil {
   margin-top: 3rem;
   width: 100%;
   height: 10rem;
@@ -79,7 +79,7 @@ section {
 }
 
 .location-container {
-  border: 1px solid black;
+  // border: 1px solid black;
   margin-top: 5rem;
   display: grid;
   justify-content: center;
@@ -122,3 +122,9 @@ footer {
     color: white;
   }
 }
+
+// @media screen and (max-width: 450px) {
+//   .location {
+//     margin: 2rem 0;
+//   }
+// }
