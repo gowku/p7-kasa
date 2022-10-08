@@ -2,10 +2,11 @@
 // import "./App.css";
 // import img from "./asset/acceuilimg.jpg";
 
-import Logement from "./pages/Logement";
+// import Logement from "./pages/Logement";
+import NotFound from "./pages/NotFound";
 
 function App() {
-  return <Logement />;
+  return <NotFound />;
 }
 
 export default App;

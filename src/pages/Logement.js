@@ -33,7 +33,7 @@ function Logement() {
       <section class="pictures">
         <img src={imgLogement} alt="imgLogement"></img>
       </section>
-      <main>
+      <main class="main_logement">
         <div class="info">
           <div class="top">
             <div class="top_left">
