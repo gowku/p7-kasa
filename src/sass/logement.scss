@@ -1,10 +1,23 @@
 .pictures {
   margin-top: 4rem;
+  position: relative;
   img {
     height: 30rem;
     width: 100%;
     object-fit: cover;
     border-radius: 25px;
+  }
+  svg {
+    position: absolute;
+    // position: relative;
+    z-index: 10;
+    top: 45%;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
   }
 }
 .main_logement {
@@ -15,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   &_left {
-    width: 70%;
+    width: 80%;
   }
   &_tags {
     display: flex;
@@ -26,7 +39,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 10px;
-      width: 7.2rem;
+      width: 9rem;
       height: 1.5rem;
       background-color: $primary;
       color: white;
@@ -37,16 +50,18 @@
     &_name {
       margin-right: 1rem;
     }
-    &_img {
+    & img {
       width: 4rem;
       height: 4rem;
       border-radius: 50%;
-      background-color: grey;
     }
   }
 }
 .top_right_ratings {
   margin-top: 2rem;
+  svg {
+    margin-left: 0.2rem;
+  }
 }
 .bottom {
   display: flex;

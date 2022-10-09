@@ -1,18 +1,12 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function HomeLogement(props) {
-  console.log(props.data);
-  // const id = props.data.id;
-  const cover = props.data.cover;
-  const title = props.data.title;
-  // const {id} = useParams()
-
   return (
-    <Link to=`/logement/${id}`>
+    <Link to={`/logement/${props.id}`}>
       <li className="location">
-        <img src={cover} alt="logement" />
-        <p className="location-titre">{title}</p>
+        <img src={props.cover} alt="logement" />
+        <p className="location-titre">{props.title}</p>
       </li>
     </Link>
   );

@@ -1,45 +1,46 @@
-import imgLogement from "../asset/BackgroundLogement.jpg";
+import { useParams } from "react-router-dom";
+import EquipementItem from "../components/EquipementItem";
+import Tag from "../components/Tag";
 
-function Logement() {
+function Logement(props) {
+  const { id } = useParams();
+  const logement = props.data.find((logement) => logement.id === id);
+  console.log(logement);
+  const hostName = logement.host.name.split(" ");
+
   return (
     <>
       <section className="pictures">
-        <img src={imgLogement} alt="imgLogement"></img>
+        <img src={logement.pictures[0]} alt="imgLogement"></img>
+        <svg className="left" width="96" height="120" viewBox="0 0 96 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M70.04 15.7831L62.92 8.70312L23.36 48.3031L62.96 87.9031L70.04 80.8231L37.52 48.3031L70.04 15.7831Z" fill="white" />
+        </svg>
+        <svg className="right" width="96" height="121" viewBox="0 0 96 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25.96 81.3458L33.04 88.4258L72.64 48.8258L33.04 9.22583L25.96 16.3058L58.48 48.8258L25.96 81.3458Z" fill="white" />
+        </svg>
       </section>
       <main className="main_logement">
         <div className="info">
           <div className="top">
             <div className="top_left">
               <div className="top_left_where">
-                <h2 className="top_left_where_title">Cozy loft on the canal saint martin</h2>
-                <p className="top_left_where_location">Paris, Ile de france</p>
+                <h2 className="top_left_where_title">{logement.title}</h2>
+                <p className="top_left_where_location">{logement.location}</p>
               </div>
               <div className="top_tags">
-                <div className="top_tags_tag">
-                  <p>Cozy</p>
-                </div>
-                <div className="top_tags_tag">
-                  <p>Canal</p>
-                </div>
-                <div className="top_tags_tag">
-                  <p>Paris 10</p>
-                </div>
-                <div className="top_tags_tag">
-                  <p>Louvre</p>
-                </div>
-                <div className="top_tags_tag">
-                  <p>Rivoli</p>
-                </div>
+                {logement.tags.map((el) => (
+                  <Tag tag={el} />
+                ))}
               </div>
             </div>
             <div className="top_right">
               <div className="top_host">
                 <div className="top_host_name">
-                  <p>Alexandre</p>
-                  <p>Dumas</p>
+                  <p>{hostName[0]}</p>
+                  <p>{hostName[1]}</p>
                 </div>
                 <div className="top_host_img">
-                  <img alt="?"></img>
+                  <img src={logement.host.picture} alt="hôte"></img>
                 </div>
               </div>
               <div className="top_right_ratings">
@@ -70,11 +71,7 @@ function Logement() {
                 </svg>
               </div>
               <div className="bottom_description_texte">
-                <p>
-                  Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canal Saint Martin, vous serez proche
-                  des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui
-                  souhaitent se déplacer en voiture.
-                </p>
+                <p>{logement.description}</p>
               </div>
             </div>
             <div className="bottom_description">
@@ -86,13 +83,9 @@ function Logement() {
               </div>
               <div className="bottom_description_texte">
                 <ul>
-                  <li>Climatisation</li>
-                  <li>Wi-fi</li>
-                  <li>Cuisine</li>
-                  <li>Espace de travail</li>
-                  <li>Fer a repasser</li>
-                  <li>Seche-cheveux</li>
-                  <li>Cintres</li>
+                  {logement.equipments.map((el) => (
+                    <EquipementItem item={el} />
+                  ))}
                 </ul>
               </div>
             </div>

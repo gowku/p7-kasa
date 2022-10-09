@@ -1,8 +1,7 @@
 import img from "../asset/acceuilimg.jpg";
 import HomeLogement from "../components/HomeLogement";
-import data from "../Data/logements.json";
 
-function Home() {
+function Home(props) {
   return (
     <>
       <section className="imgAcceuil">
@@ -12,8 +11,8 @@ function Home() {
       </section>
       <main>
         <ul className="location-container">
-          {data.map((logement) => (
-            <HomeLogement key={logement.id} data={logement} />
+          {props.data.map((logement) => (
+            <HomeLogement key={logement.id} id={logement.id} cover={logement.cover} title={logement.title} />
           ))}
         </ul>
       </main>
