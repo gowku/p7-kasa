@@ -1,4 +1,4 @@
-import img from "./asset/acceuilimg.jpg";
+import img from "../asset/acceuilimg.jpg";
 
 function Home() {
   return (

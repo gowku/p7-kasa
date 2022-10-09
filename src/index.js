@@ -4,11 +4,15 @@ import ReactDOM from "react-dom/client";
 import "./sass/index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import Data from "./Data/logements.json";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App data={Data} />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

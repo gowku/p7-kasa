@@ -1,14 +1,11 @@
 body {
-  // border: 1px solid black;
   max-width: 1400px;
   margin: 0 auto;
 }
 #root {
-  // border: 1px solid black;
   margin: 0 2rem;
 }
 header {
-  // border: 1px solid black;
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
@@ -19,7 +16,6 @@ header {
     margin-right: 2rem;
   }
   nav {
-    // border: 1px solid black;
     width: 14rem;
     margin-right: 1rem;
     display: flex;
@@ -67,7 +63,6 @@ header {
   }
   h1 {
     width: 100%;
-    border: 1px solid black;
     position: absolute;
     z-index: 20;
     color: #ffffff;
@@ -79,7 +74,6 @@ header {
 }
 
 .location-container {
-  // border: 1px solid black;
   margin-top: 5rem;
   display: grid;
   justify-content: center;
