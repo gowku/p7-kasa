@@ -1,3 +1,14 @@
 .main_notFound {
   color: $primary;
+  text-align: center;
+  h3 {
+    margin-top: 2rem;
+  }
+  p {
+    margin-bottom: 4rem;
+  }
+  a {
+    color: $primary;
+    text-decoration: underline;
+  }
 }

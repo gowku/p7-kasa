@@ -34,7 +34,9 @@ function NotFound() {
       <main className="main_notFound">
         <h3>404</h3>
         <p>Oups, La page que vous demandez n'existe pas.</p>
-        <a>Retourner sur la page d'acceuil</a>
+        <a href="#" className="ici">
+          Retourner sur la page d'acceuil
+        </a>
       </main>
     </>
   );
