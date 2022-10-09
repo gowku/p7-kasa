@@ -1,0 +1,14 @@
+.background_img {
+  img {
+    margin-top: 3rem;
+    border-radius: 25px;
+  }
+}
+.main_APropos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .bottom_description {
+    margin-top: 2rem;
+  }
+}
