@@ -1,29 +1,24 @@
-// import logo from "./logo.svg";
-// import "./App.css";
-// import img from "./asset/acceuilimg.jpg";
-
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import APropos from "./pages/APropos";
 import Home from "./pages/Home";
 import Logement from "./pages/Logement";
 import NotFound from "./pages/NotFound";
 
-function App(props) {
-  console.log(props.data[0]);
-
+function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/logement" element={<Logement />} />
-      <Route />
-      <Route />
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/logement/:id" element={<Logement />} />
+        <Route path="/a-propos" element={<APropos />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </>
   );
-
-  // return <Home />;
-  // return <Logement />;
-  // return <NotFound />;
-  // return <APropos />;
 }
 
 export default App;
