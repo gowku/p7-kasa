@@ -29,7 +29,7 @@ function Logement(props) {
             </div>
             <div className="top_right">
               {<Host host={logement.host} />}
-              {<Rating />}
+              {<Rating rating={logement.rating} />}
             </div>
           </div>
           <div className="bottom">

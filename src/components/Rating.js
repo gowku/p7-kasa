@@ -1,25 +1,72 @@
 import React from "react";
+import Star from "./Star";
 
-function Rating() {
-  return (
-    <div className="top_right_ratings">
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18.645 12L15 0L11.355 12H0L9.27 18.615L5.745 30L15 22.965L24.27 30L20.745 18.615L30 12H18.645Z" fill="#FF6060" />
-      </svg>
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18.645 12L15 0L11.355 12H0L9.27 18.615L5.745 30L15 22.965L24.27 30L20.745 18.615L30 12H18.645Z" fill="#FF6060" />
-      </svg>
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18.645 12L15 0L11.355 12H0L9.27 18.615L5.745 30L15 22.965L24.27 30L20.745 18.615L30 12H18.645Z" fill="#FF6060" />
-      </svg>
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18.645 12L15 0L11.355 12H0L9.27 18.615L5.745 30L15 22.965L24.27 30L20.745 18.615L30 12H18.645Z" fill="#FF6060" />
-      </svg>
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18.645 12L15 0L11.355 12H0L9.27 18.615L5.745 30L15 22.965L24.27 30L20.745 18.615L30 12H18.645Z" fill="#FF6060" />
-      </svg>
-    </div>
-  );
+function Rating(props) {
+  console.log(typeof props.rating);
+  let content;
+  switch (props.rating) {
+    case "1":
+      content = (
+        <>
+          <Star plain />
+          <Star empty />
+          <Star empty />
+          <Star empty />
+          <Star empty />
+        </>
+      );
+
+      break;
+    case "2":
+      content = (
+        <>
+          <Star plain />
+          <Star plain />
+          <Star empty />
+          <Star empty />
+          <Star empty />
+        </>
+      );
+      break;
+    case "3":
+      content = (
+        <>
+          <Star plain />
+          <Star plain />
+          <Star plain />
+          <Star empty />
+          <Star empty />
+        </>
+      );
+      break;
+    case "4":
+      content = (
+        <>
+          <Star plain />
+          <Star plain />
+          <Star plain />
+          <Star plain />
+          <Star empty />
+        </>
+      );
+      break;
+    case "5":
+      content = (
+        <>
+          <Star plain />
+          <Star plain />
+          <Star plain />
+          <Star plain />
+          <Star plain />
+        </>
+      );
+      break;
+
+    default:
+      break;
+  }
+
+  return <div className="top_right_ratings">{content}</div>;
 }
 
 export default Rating;

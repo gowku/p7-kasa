@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import EquipementItem from "./EquipementItem";
 
 function Collapse(props) {
-  console.log(props);
+  // console.log(props);
   const [hide, setHide] = useState(true);
-  console.log(hide);
+  // console.log(hide);
 
   const hideCollapse = () => {
     setHide((current) => !current);
