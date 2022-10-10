@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
-import EquipementItem from "../components/EquipementItem";
+import Collapse from "../components/Collapse";
 import Host from "../components/Host";
 import Rating from "../components/Rating";
 import Tag from "../components/Tag";
@@ -33,32 +33,8 @@ function Logement(props) {
             </div>
           </div>
           <div className="bottom">
-            <div className="bottom_description">
-              <div className="bottom_description_title">
-                <p>Description</p>
-                <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M24.84 16.3466L27.2 13.9733L14 0.786621L0.800025 13.9866L3.16003 16.3466L14 5.50662L24.84 16.3466Z" fill="white" />
-                </svg>
-              </div>
-              <div className="bottom_description_texte">
-                <p>{logement.description}</p>
-              </div>
-            </div>
-            <div className="bottom_description">
-              <div className="bottom_description_title">
-                <p>Equipement</p>
-                <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M24.84 16.3466L27.2 13.9733L14 0.786621L0.800025 13.9866L3.16003 16.3466L14 5.50662L24.84 16.3466Z" fill="white" />
-                </svg>
-              </div>
-              <div className="bottom_description_texte">
-                <ul>
-                  {logement.equipments.map((el) => (
-                    <EquipementItem item={el} />
-                  ))}
-                </ul>
-              </div>
-            </div>
+            {<Collapse logementTitle={"Description"} logementDescription={logement.description} />}
+            {<Collapse equipementTitle={"Équipement"} equipementDescription={logement.equipments} />}
           </div>
         </div>
       </main>
