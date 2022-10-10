@@ -2,7 +2,7 @@ import React from "react";
 import Star from "./Star";
 
 function Rating(props) {
-  console.log(typeof props.rating);
+  // console.log( props.rating);
   let content;
   switch (props.rating) {
     case "1":
