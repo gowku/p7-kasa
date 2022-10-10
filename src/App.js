@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import data from "./Data/logements.json";
 
 function App() {
+  console.log(data);
   return (
     <>
       <Header />

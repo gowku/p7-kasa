@@ -1,4 +1,4 @@
-.pictures {
+.carrousel {
   margin-top: 4rem;
   position: relative;
   img {
@@ -9,8 +9,7 @@
   }
   svg {
     position: absolute;
-    // position: relative;
-    z-index: 10;
+    // z-index: 10;
     top: 45%;
   }
   .left {
@@ -32,17 +31,21 @@
   }
   &_tags {
     display: flex;
-    justify-content: space-between;
     margin-top: 1.5rem;
+    max-width: 80%;
     &_tag {
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 10px;
-      width: 9rem;
+      width: 10rem;
       height: 1.5rem;
       background-color: $primary;
       color: white;
+      margin-left: 1rem;
+    }
+    &_tag:first-child {
+      margin-left: 0;
     }
   }
   &_host {
