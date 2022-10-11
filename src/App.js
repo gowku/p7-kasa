@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import APropos from "./pages/APropos";
-import Home from "./pages/Home";
-import Logement from "./pages/Logement";
-import NotFound from "./pages/NotFound";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import APropos from "./pages/aPropos/APropos";
+import Home from "./pages/home/Home";
+import Logement from "./pages/logement/Logement";
+import NotFound from "./pages/notFound/NotFound";
 import data from "./Data/logements.json";
 
 function App() {

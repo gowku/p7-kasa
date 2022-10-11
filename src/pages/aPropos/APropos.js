@@ -1,6 +1,6 @@
 import React from "react";
-import imgAPropos from "../asset/backgroundAPropos.jpg";
-import Collapse from "../components/Collapse";
+import imgAPropos from "../../asset/backgroundAPropos.jpg";
+import Collapse from "../../components/collapse/Collapse";
 
 function APropos() {
   const description1 = `Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations

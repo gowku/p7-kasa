@@ -1,0 +1,49 @@
+.bottom_description {
+  width: 45%;
+  &_title {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary;
+    height: 2.5rem;
+    border-radius: 10px;
+    p {
+      color: white;
+      margin-left: 1rem;
+    }
+    svg {
+      margin-right: 1rem;
+    }
+  }
+  &_texte {
+    position: relative;
+    bottom: 0;
+    border: 1px solid transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: $secondary;
+    margin-top: -0.5rem;
+    p {
+      padding: 2rem 1rem 2.7rem 1rem;
+      color: $primary;
+    }
+    ul {
+      margin: 2.2rem 0 2.6rem 0;
+      // li {
+      //   margin-top: 0.2rem;
+      //   margin-left: 1rem;
+      //   color: $primary;
+      // }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+.turn {
+  transform: rotate(180deg);
+}

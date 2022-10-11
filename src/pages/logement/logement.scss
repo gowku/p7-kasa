@@ -1,0 +1,27 @@
+.main_logement {
+  margin-top: 2rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  &_left {
+    width: 80%;
+  }
+  &_tags {
+    display: flex;
+    margin-top: 1.5rem;
+    max-width: 80%;
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+// .link-active {
+//   text-decoration: underline;
+//   color: $primary;
+// }

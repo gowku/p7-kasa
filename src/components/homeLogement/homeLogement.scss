@@ -1,0 +1,17 @@
+.location {
+  width: 21rem;
+  height: 21rem;
+  position: relative;
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  &-titre {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 10rem;
+    color: black;
+  }
+}

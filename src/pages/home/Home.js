@@ -1,5 +1,5 @@
-import img from "../asset/acceuilimg.jpg";
-import HomeLogement from "../components/HomeLogement";
+import img from "../../asset/acceuilimg.jpg";
+import HomeLogement from "../../components/homeLogement/HomeLogement";
 
 function Home(props) {
   return (

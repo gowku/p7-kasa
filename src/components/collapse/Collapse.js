@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import EquipementItem from "./EquipementItem";
+import EquipementItem from "../equipementItem/EquipementItem";
 
 function Collapse(props) {
   // console.log(props);

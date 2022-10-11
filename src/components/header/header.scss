@@ -1,0 +1,32 @@
+header {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  svg {
+    width: 9rem;
+    height: 3rem;
+    margin-right: 2rem;
+  }
+  nav {
+    width: 14rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: $primary;
+      &:hover {
+        text-decoration: underline;
+        color: $primary;
+      }
+
+      &:first-child {
+        margin-right: 1rem;
+      }
+      &:nth-child(2) {
+        white-space: nowrap;
+      }
+    }
+  }
+}

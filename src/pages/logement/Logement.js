@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
-import Carrousel from "../components/Carrousel";
-import Collapse from "../components/Collapse";
-import Host from "../components/Host";
-import Rating from "../components/Rating";
-import Tag from "../components/Tag";
+import Carrousel from "../../components/carrousel/Carrousel";
+import Collapse from "../../components/collapse/Collapse";
+import Host from "../../components/host/Host";
+import Rating from "../../components/rating/Rating";
+import Tag from "../../components/tag/Tag";
 
 function Logement(props) {
   const { id } = useParams();

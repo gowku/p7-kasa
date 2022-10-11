@@ -1,0 +1,21 @@
+.carrousel {
+  margin-top: 4rem;
+  position: relative;
+  img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  svg {
+    position: absolute;
+    // z-index: 10;
+    top: 45%;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+}

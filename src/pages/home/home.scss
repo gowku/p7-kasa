@@ -1,0 +1,58 @@
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+#root {
+  margin: 0 2rem;
+}
+
+.imgAcceuil {
+  margin-top: 3rem;
+  width: 100%;
+  height: 15rem;
+  position: relative;
+  z-index: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .overlay {
+    position: absolute;
+    z-index: 10;
+    background: #000000;
+    opacity: 0.3;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  h1 {
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    color: #ffffff;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+}
+
+.location-container {
+  margin-top: 5rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 21.25rem);
+  // column-gap: 5rem;
+  // row-gap: 2.5rem;
+  gap: 5rem;
+}
+
+// @media screen and (max-width: 450px) {
+//   .location {
+//     margin: 2rem 0;
+//   }
+// }
