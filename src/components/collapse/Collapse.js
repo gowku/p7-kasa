@@ -46,8 +46,8 @@ function Collapse(props) {
         {props.aProposDescription && <p>{content}</p>}
         {props.equipementDescription && (
           <ul>
-            {props.equipementDescription.map((el) => (
-              <EquipementItem item={el} />
+            {props.equipementDescription.map((el, index) => (
+              <EquipementItem key={index} item={el} />
             ))}
           </ul>
         )}

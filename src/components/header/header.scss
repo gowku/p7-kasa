@@ -5,14 +5,14 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 3rem;
-  // svg {
-  //   width: 9rem;
-  //   height: 4.25rem;
-  //   margin-right: 2rem;
-  // }
-  img {
-    height: 4.25rem;
+  svg {
+    // width: 9rem;
+    // height: 4.25rem;
+    margin-right: 2rem;
   }
+  // img {
+  //   height: 4.25rem;
+  // }
   nav {
     width: 14rem;
     margin-right: 1rem;
@@ -42,7 +42,7 @@ header {
 
 @media screen and (max-width: 500px) {
   .acceuil-logo {
-    height: 2.9rem;
+    // height: 2.9rem;
   }
   // .link {
   //   font-style: normal;
