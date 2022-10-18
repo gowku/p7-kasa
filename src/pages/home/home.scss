@@ -37,10 +37,6 @@ body {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    text-align: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3rem;
     // white-space: nowrap;
     line-height: 142.6%;
   }
@@ -73,10 +69,7 @@ body {
 @media screen and (max-width: 500px) {
   .imgAcceuil {
     height: 10rem;
-
     h1 {
-      font-size: 1.5rem;
-      line-height: 100%;
       text-align: center;
     }
   }
@@ -86,5 +79,8 @@ body {
     h1 {
       text-align: left;
     }
+  }
+  .location-container {
+    margin: 1rem 0;
   }
 }

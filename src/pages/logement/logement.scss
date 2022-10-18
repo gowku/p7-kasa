@@ -7,12 +7,12 @@
   justify-content: space-between;
   &_left {
     width: 75%;
-    border: 1px solid black;
   }
   &_tags {
+    border: 1px solid black;
     display: flex;
     margin-top: 1.5rem;
-    max-width: 80%;
+    width: 80%;
   }
 }
 
@@ -26,12 +26,10 @@
   .top {
     flex-direction: column;
     &_left {
-      border: 1px solid blue;
       width: 100%;
       margin-bottom: 2rem;
     }
     &_right {
-      border: 1px solid black;
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
@@ -45,5 +43,8 @@
         margin-bottom: 2rem;
       }
     }
+  }
+  .top_tags {
+    width: 100%;
   }
 }

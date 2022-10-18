@@ -1,14 +1,22 @@
 * {
   font-family: "Montserrat";
 }
-
-// h1 {
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 3rem;
-//   // white-space: nowrap;
-//   line-height: 142.6%;
-// }
+nav {
+  a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 142.6%;
+  }
+}
+.imgAcceuil {
+  h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+  }
+}
 
 .location-titre {
   font-style: normal;
@@ -35,14 +43,14 @@ h2 {
 .top_tags_tag {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 142.6%;
 }
 
 .top_host_name {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 142.6%;
 }
 
@@ -82,5 +90,48 @@ h2 {
     font-weight: 500;
     font-size: 1.1rem;
     line-height: 142.6%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .top_tags_tag {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main_notFound {
+    h3 {
+      font-size: 10rem;
+    }
+    p {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 142.6%;
+  }
+  .imgAcceuil {
+    h1 {
+      font-size: 1.5rem;
+      line-height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main_notFound {
+    h3 {
+      font-size: 6rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 }

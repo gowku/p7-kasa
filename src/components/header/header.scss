@@ -14,16 +14,8 @@ header {
     justify-content: space-between;
     align-items: center;
     a {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.5rem;
-      line-height: 142.6%;
       color: $primary;
       text-decoration: none;
-      // &:hover {
-      //   text-decoration: underline;
-      //   color: $primary;
-      // }
       &:nth-child(2) {
         white-space: nowrap;
       }
@@ -40,15 +32,10 @@ header {
     height: 2.5rem;
     margin-left: -2rem;
   }
-  .link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 142.6%;
-    &:first-child {
-      margin-right: 1rem;
-    }
+  .link:first-child {
+    margin-right: 1rem;
   }
+
   header {
     nav {
       width: 10rem;

@@ -1,13 +1,10 @@
 .top_host {
+  border: 1px solid black;
   margin-left: 2.5rem;
   display: flex;
   &_name {
     margin-right: 1rem;
     color: $primary;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.1rem;
-    line-height: 142.6%;
   }
   &_img {
     width: 4rem;
@@ -15,8 +12,3 @@
     border-radius: 50%;
   }
 }
-// @media screen and (max-width: 850px) {
-//   .top_host {
-//     flex-direction: column;
-//   }
-// }
