@@ -8,56 +8,50 @@ import Tag from "../../components/tag/Tag";
 
 function Logement({ data }) {
   const { id } = useParams();
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   const logement = data.find((logement) => logement.id === id);
+
+  console.log("logement", !logement);
+  console.log("id", id);
 
   useEffect(() => {
     if (!logement) {
-      console.log("cést undefined");
+      console.log("c'est undefined");
+      navigate("/404-notFound");
     }
-  }, []);
-
-  // if (logement === undefined) {
-  //   navigate("/404-notFound");
-  // }
-
-  // let idsLogement = [];
-  // data.forEach((el) => {
-  //   idsLogement.push(el.id);
-
-  // });
-  // console.log(idsLogement);
-  console.log(id);
+  }, [logement]);
 
   return (
-    <>
-      {<Carrousel pictures={logement.pictures} />}
-      <main className="main_logement">
-        <div className="info">
-          <div className="top">
-            <div className="top_left">
-              <div className="top_left_where">
-                <h2 className="top_left_where_title">{logement.title}</h2>
-                <p className="top_left_where_location">{logement.location}</p>
+    logement && (
+      <>
+        {<Carrousel pictures={logement.pictures} />}
+        <main className="main_logement">
+          <div className="info">
+            <div className="top">
+              <div className="top_left">
+                <div className="top_left_where">
+                  <h2 className="top_left_where_title">{logement.title}</h2>
+                  <p className="top_left_where_location">{logement.location}</p>
+                </div>
+                <div className="top_tags">
+                  {logement.tags.map((el) => (
+                    <Tag key={el} tag={el} />
+                  ))}
+                </div>
               </div>
-              <div className="top_tags">
-                {logement.tags.map((el) => (
-                  <Tag key={el} tag={el} />
-                ))}
+              <div className="top_right">
+                {<Host host={logement.host} />}
+                {<Rating rating={logement.rating} />}
               </div>
             </div>
-            <div className="top_right">
-              {<Host host={logement.host} />}
-              {<Rating rating={logement.rating} />}
+            <div className="bottom">
+              {<Collapse logementTitle={"Description"} logementDescription={logement.description} />}
+              {<Collapse equipementTitle={"Équipement"} equipementDescription={logement.equipments} />}
             </div>
           </div>
-          <div className="bottom">
-            {<Collapse logementTitle={"Description"} logementDescription={logement.description} />}
-            {<Collapse equipementTitle={"Équipement"} equipementDescription={logement.equipments} />}
-          </div>
-        </div>
-      </main>
-    </>
+        </main>
+      </>
+    )
   );
 }
 
