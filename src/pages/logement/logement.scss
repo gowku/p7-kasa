@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   &_left {
-    width: 80%;
+    width: 75%;
+    border: 1px solid black;
   }
   &_tags {
     display: flex;
@@ -15,13 +16,34 @@
   }
 }
 
-.bottom {
+.bottom-logement {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
 }
 
-// .link-active {
-//   text-decoration: underline;
-//   color: $primary;
-// }
+@media screen and (max-width: 850px) {
+  .top {
+    flex-direction: column;
+    &_left {
+      border: 1px solid blue;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    &_right {
+      border: 1px solid black;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+  .bottom-logement {
+    flex-direction: column;
+    .bottom_description {
+      width: 100%;
+      &:first-child {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

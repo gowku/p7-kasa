@@ -6,6 +6,7 @@ function HomeLogement(props) {
     <Link to={`/logement/${props.id}`}>
       <li className="location">
         <img src={props.cover} alt="logement" />
+        <div className="overlay-logement"></div>
         <p className="location-titre">{props.title}</p>
       </li>
     </Link>

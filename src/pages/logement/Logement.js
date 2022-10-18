@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { redirect, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Carrousel from "../../components/carrousel/Carrousel";
 import Collapse from "../../components/collapse/Collapse";
 import Host from "../../components/host/Host";
@@ -11,8 +11,8 @@ function Logement({ data }) {
   const navigate = useNavigate();
   const logement = data.find((logement) => logement.id === id);
 
-  console.log("logement", !logement);
-  console.log("id", id);
+  // console.log("logement", !logement);
+  // console.log("id", id);
 
   useEffect(() => {
     if (!logement) {
@@ -44,7 +44,7 @@ function Logement({ data }) {
                 {<Rating rating={logement.rating} />}
               </div>
             </div>
-            <div className="bottom">
+            <div className="bottom-logement">
               {<Collapse logementTitle={"Description"} logementDescription={logement.description} />}
               {<Collapse equipementTitle={"Équipement"} equipementDescription={logement.equipments} />}
             </div>

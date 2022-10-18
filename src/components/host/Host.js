@@ -8,9 +8,7 @@ function Host(props) {
         <p>{hostName[0]}</p>
         <p>{hostName[1]}</p>
       </div>
-      <div className="top_host_img">
-        <img src={props.host.picture} alt="hôte"></img>
-      </div>
+      <img className="top_host_img" src={props.host.picture} alt="hôte"></img>
     </div>
   );
 }

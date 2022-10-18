@@ -8,13 +8,13 @@ import NotFound from "./pages/notFound/NotFound";
 import data from "./Data/logements.json";
 
 function App() {
-  console.log(data);
+  // console.log(data);
 
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home data={data} />} />
+        <Route path="/home" element={<Home data={data} />} />
         <Route path="/logement/:id" element={<Logement data={data} />} />
         <Route path="/a-propos" element={<APropos />} />
         <Route path="/404-notFound" element={<NotFound />} />

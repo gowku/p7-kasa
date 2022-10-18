@@ -12,3 +12,15 @@
     text-decoration: underline;
   }
 }
+@media screen and (max-width: 700px) {
+  .main_notFound {
+    color: $primary;
+    text-align: center;
+    h3 {
+      margin-top: 2rem;
+    }
+    p {
+      margin-bottom: 4rem;
+    }
+  }
+}

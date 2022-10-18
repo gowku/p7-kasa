@@ -1,21 +1,15 @@
 header {
-  border: 1px solid black;
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 3rem;
   svg {
-    // width: 9rem;
-    // height: 4.25rem;
-    margin-right: 2rem;
+    height: 4.25rem;
   }
-  // img {
-  //   height: 4.25rem;
-  // }
+
   nav {
     width: 14rem;
-    margin-right: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,29 +19,46 @@ header {
       font-size: 1.5rem;
       line-height: 142.6%;
       color: $primary;
-      &:hover {
-        text-decoration: underline;
-        color: $primary;
-      }
-
-      &:first-child {
-        margin-right: 1rem;
-      }
+      text-decoration: none;
+      // &:hover {
+      //   text-decoration: underline;
+      //   color: $primary;
+      // }
       &:nth-child(2) {
         white-space: nowrap;
       }
     }
   }
 }
+.active-link {
+  text-decoration: underline;
+  color: $primary;
+}
 
 @media screen and (max-width: 500px) {
   .acceuil-logo {
-    // height: 2.9rem;
+    height: 2.5rem;
+    margin-left: -2rem;
   }
-  // .link {
-  //   font-style: normal;
-  //   font-weight: 500;
-  //   font-size: 0.75rem;
-  //   line-height: 142.6%;
-  // }
+  .link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 142.6%;
+    &:first-child {
+      margin-right: 1rem;
+    }
+  }
+  header {
+    nav {
+      width: 10rem;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .acceuil-logo {
+    height: 1.9rem;
+    width: 5rem;
+    margin-left: 0.5rem;
+  }
 }
