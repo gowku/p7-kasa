@@ -25,7 +25,7 @@ function Header() {
         </svg>
       </div>
       <nav>
-        <NavLink to="/home" className={({ isActive }) => (isActive ? "link active-link" : "link")} end>
+        <NavLink to="/" className={({ isActive }) => (isActive ? "link active-link" : "link")} end>
           Acceuil
         </NavLink>
         <NavLink to="/a-propos" className={({ isActive }) => (isActive ? "link active-link" : "link")} end>

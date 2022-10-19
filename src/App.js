@@ -14,7 +14,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/home" element={<Home data={data} />} />
+        <Route path="/" element={<Home data={data} />} />
         <Route path="/logement/:id" element={<Logement data={data} />} />
         <Route path="/a-propos" element={<APropos />} />
         <Route path="/404-notFound" element={<NotFound />} />
