@@ -10,13 +10,16 @@ function Logement({ data }) {
   const { id } = useParams();
   const navigate = useNavigate();
   const logement = data.find((logement) => logement.id === id);
-
+  // console.log(logement.tags.length);
   // console.log("logement", !logement);
   // console.log("id", id);
+  let tooMuch;
+  if (logement.tags.length === 4 || logement.tags.length === 5) {
+    tooMuch = true;
+  }
 
   useEffect(() => {
     if (!logement) {
-      console.log("c'est undefined");
       navigate("/404-notFound");
     }
   }, [logement]);
@@ -33,9 +36,9 @@ function Logement({ data }) {
                   <h2 className="top_left_where_title">{logement.title}</h2>
                   <p className="top_left_where_location">{logement.location}</p>
                 </div>
-                <div className="top_tags">
+                <div className={tooMuch ? "top_tags high" : "top_tags"}>
                   {logement.tags.map((el) => (
-                    <Tag key={el} tag={el} />
+                    <Tag key={el} tag={el} tooMany={tooMuch} />
                   ))}
                 </div>
               </div>

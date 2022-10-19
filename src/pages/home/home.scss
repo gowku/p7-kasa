@@ -37,7 +37,6 @@ body {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    // white-space: nowrap;
     line-height: 142.6%;
   }
 }
@@ -47,21 +46,14 @@ body {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, 21.25rem);
-  // column-gap: 5rem;
-  // row-gap: 2.5rem;
   gap: 5rem;
 }
-
-// @media screen and (max-width: 450px) {
-//   .location {
-//     margin: 2rem 0;
-//   }
-// }
 
 @media screen and (max-width: 780px) {
   .imgAcceuil {
     h1 {
       text-align: left;
+      margin-left: 1rem;
     }
   }
 }
@@ -71,16 +63,22 @@ body {
     height: 10rem;
     h1 {
       text-align: center;
+      margin-left: 0;
     }
+  }
+  .location-container {
+    display: block;
   }
 }
 @media screen and (max-width: 420px) {
   .imgAcceuil {
     h1 {
+      padding-left: 1rem;
+      padding-right: 1rem;
       text-align: left;
     }
   }
   .location-container {
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
 }

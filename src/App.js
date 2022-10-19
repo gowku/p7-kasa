@@ -8,7 +8,7 @@ import NotFound from "./pages/notFound/NotFound";
 import data from "./Data/logements.json";
 
 function App() {
-  // console.log(data);
+  console.log(data);
 
   return (
     <>

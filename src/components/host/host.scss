@@ -1,5 +1,4 @@
 .top_host {
-  border: 1px solid black;
   margin-left: 2.5rem;
   display: flex;
   &_name {
@@ -10,5 +9,20 @@
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  // .top_host {
+  //   margin-left: 1rem;
+  // }
+  .top_host_img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .top_host {
+    margin-left: 0;
   }
 }

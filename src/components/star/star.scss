@@ -10,7 +10,12 @@
 }
 @media screen and (max-width: 415px) {
   .star {
-    // height: 1.2rem;
     margin-left: 0.1rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .star {
+    height: 1.2rem;
+    margin-left: 0;
   }
 }

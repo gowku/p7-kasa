@@ -2,7 +2,7 @@ import React from "react";
 
 function Tag(props) {
   return (
-    <div className="top_tags_tag">
+    <div className={props.tooMany ? "top_tags_tag margin" : "top_tags_tag"}>
       <p>{props.tag}</p>
     </div>
   );

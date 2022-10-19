@@ -9,10 +9,9 @@
     width: 75%;
   }
   &_tags {
-    border: 1px solid black;
     display: flex;
     margin-top: 1.5rem;
-    width: 80%;
+    width: 85%;
   }
 }
 
@@ -46,5 +45,13 @@
   }
   .top_tags {
     width: 100%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .high {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 10rem);
+    gap: 1rem;
+    height: auto;
   }
 }
