@@ -55,3 +55,11 @@
     height: auto;
   }
 }
+@media screen and (max-width: 350px) {
+  .top_tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 10rem);
+    gap: 1rem;
+    height: auto;
+  }
+}
