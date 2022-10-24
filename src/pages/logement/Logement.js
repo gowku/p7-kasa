@@ -14,7 +14,7 @@ function Logement({ data }) {
   // console.log("logement", !logement);
   // console.log("id", id);
   let tooMuch;
-  if (logement.tags.length >= 4) {
+  if (logement?.tags.length >= 4) {
     tooMuch = true;
   }
 
