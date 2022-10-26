@@ -18,7 +18,7 @@ function App() {
         <Route path="/logement/:id" element={<Logement data={data} />} />
         <Route path="/a-propos" element={<APropos />} />
         <Route path="/404-notFound" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/404-notFound" />} />
+        <Route path="/*" element={<Navigate to="/404-notFound" />} />
       </Routes>
       <Footer />
     </>
